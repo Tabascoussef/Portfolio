@@ -1,0 +1,210 @@
+@import "./portfolio-fonts.css";
+
+:root {
+    color-scheme: light;
+    font: 16px/1.5 "Inter", Arial, sans-serif;
+    background: #f4f7f4;
+    color: #142620;
+    --forest: #183c32;
+    --ink-muted: #53685f;
+    --line: #d6e1da;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid #357860; outline-offset: 3px; }
+
+.admin-header {
+    background: #101c19;
+    color: #f2f5f0;
+}
+
+.admin-header-inner,
+.admin-body {
+    width: min(100% - 2rem, 84rem);
+    margin-inline: auto;
+}
+
+.admin-header-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem 1.25rem;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 1rem;
+}
+
+.admin-brand {
+    font: 700 1.25rem/1.2 "Space Grotesk", "Inter", sans-serif;
+    text-decoration: none;
+}
+
+.header-actions, .actions, .languages, .pagination {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.65rem;
+}
+
+.header-actions a, .header-actions button { font-size: 0.875rem; }
+.header-actions form, .actions form { margin: 0; }
+.languages { padding-inline-end: 0.75rem; }
+.languages a { color: #c0cec6; }
+.languages a[aria-current="true"] { color: #a3d9b1; font-weight: 700; }
+
+.admin-body {
+    padding-block: 2rem 3rem;
+}
+
+.page-top {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.35rem;
+}
+
+h1, h2 { line-height: 1.15; }
+h1 { margin: 0; font-size: clamp(1.55rem, 3vw, 2.1rem); letter-spacing: -0.035em; }
+h2 { margin: 0; font-size: 1.1rem; }
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    border-radius: 0.55rem;
+    padding: 0.55rem 0.9rem;
+    font: inherit;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button.primary { background: var(--forest); color: #fff; }
+.button.primary:hover { background: #255b4a; }
+.button.secondary { background: #fff; border-color: var(--line); }
+.button.secondary:hover { background: #edf4ef; }
+.button.danger { background: #fff; border-color: #ecd3d3; color: #952d2d; }
+.button.danger:hover { background: #fff0ef; }
+.button.header-button { background: transparent; border-color: #53685f; color: #f2f5f0; }
+
+.panel {
+    min-width: 0;
+    border: 1px solid var(--line);
+    border-radius: 0.8rem;
+    padding: 1.15rem;
+    background: #fff;
+}
+
+.admin-form { display: grid; gap: 1rem; }
+.form-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 1rem;
+}
+.form-grid .wide { grid-column: 1 / -1; }
+.field { display: grid; align-content: start; gap: 0.35rem; min-width: 0; }
+.field label { font-size: 0.9rem; font-weight: 600; }
+.visibility-field { display: grid; justify-items: start; gap: 0.45rem; font-size: 0.9rem; font-weight: 600; }
+.visibility-form, .visibility-control { display: inline-flex; align-items: center; gap: 0.6rem; }
+.visibility-control { cursor: pointer; white-space: nowrap; }
+.visibility-switch {
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 0;
+    appearance: none;
+    width: 2.5rem;
+    height: 1.375rem;
+    margin: 0;
+    border: 1px solid transparent;
+    border-radius: 2rem;
+    padding: 0.125rem;
+    background: #607068;
+    cursor: pointer;
+}
+.visibility-switch::before {
+    content: '';
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: #fff;
+}
+.visibility-switch:checked { background: var(--forest); }
+.visibility-switch:checked::before { transform: translateX(1.125rem); }
+.visibility-on { display: none; }
+.visibility-switch:checked + .visibility-state .visibility-on { display: inline; }
+.visibility-switch:checked + .visibility-state .visibility-off { display: none; }
+
+.field input, .field textarea {
+    display: block;
+    width: 100%;
+    border: 1px solid #b5c7bb;
+    border-radius: 0.45rem;
+    padding: 0.6rem 0.7rem;
+    background: #fff;
+    color: #142620;
+    font: inherit;
+}
+.field textarea { resize: vertical; }
+.field small, .muted { color: var(--ink-muted); }
+.field [aria-invalid="true"] { border-color: #ac4040; }
+.error { color: #952d2d; }
+.about-photo-settings { margin-bottom: 1rem; }
+.about-photo-fields { display: flex; flex-wrap: wrap; align-items: start; gap: 1rem; }
+.about-photo-fields .admin-form { flex: 1 1 17rem; min-width: 0; }
+.about-photo-preview {
+    width: 8rem;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: 50% 65%;
+    border-radius: 50%;
+    background: #edf4ef;
+}
+.saved-gallery { margin-bottom: 1rem; }
+.uploaded-images-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin: 0.75rem 0 0;
+    padding: 0;
+    list-style: none;
+}
+.uploaded-image { display: grid; gap: 0.35rem; width: 9rem; }
+.uploaded-image img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 0.4rem;
+    background: #edf4ef;
+}
+.uploaded-image .button { width: 100%; padding: 0.3rem 0.45rem; font-size: 0.85rem; }
+.status {
+    margin: 0 0 1rem;
+    border: 1px solid #afceb9;
+    border-radius: 0.55rem;
+    padding: 0.65rem 0.8rem;
+    background: #e6f3e9;
+    color: #1c472f;
+}
+
+.lang-jump { margin-block: 0.25rem 0.75rem; }
+.lang-jump a { color: var(--forest); }
+
+.entry-list { overflow-x: auto; padding: 0; }
+.entry-list table { width: 100%; border-collapse: collapse; }
+.entry-list th, .entry-list td { padding: 0.75rem 1rem; text-align: start; }
+.entry-list th { font-size: 0.875rem; color: var(--ink-muted); }
+.entry-list tr + tr, .entry-list tbody { border-top: 1px solid var(--line); }
+.entry-list td:last-child { width: 1%; white-space: nowrap; }
+.entry-list .actions { flex-wrap: nowrap; }
+.pagination { margin-top: 1rem; justify-content: flex-end; }
+
+@media (max-width: 36rem) {
+    .form-grid { grid-template-columns: minmax(0, 1fr); }
+    .entry-list th, .entry-list td { padding: 0.65rem; }
+}
+

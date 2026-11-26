@@ -1,0 +1,171 @@
+@import "tailwindcss" source(none);
+@import "./portfolio-fonts.css";
+
+@source "../views/portfolio";
+
+@theme {
+    --color-obsidian: #080d0c;
+    --color-forest: #101c19;
+    --color-emerald: #183c32;
+    --color-sage: #a3d9b1;
+    --color-ivory: #f2f5f0;
+    --color-muted: #91a29b;
+    --font-sans: "Inter", "Inter Fallback", sans-serif;
+    --font-mono: "JetBrains Mono", "JetBrains Mono Fallback", monospace;
+}
+
+@utility portfolio-container {
+    @apply mx-auto w-full px-6 md:px-12 lg:w-10/12 lg:px-0;
+}
+
+@utility gallery-button {
+    @apply grid size-8 cursor-pointer place-items-center rounded-md bg-obsidian/85 text-sm text-ivory hover:bg-emerald;
+}
+
+html {
+    background: var(--color-obsidian);
+    color-scheme: dark;
+    scroll-behavior: smooth;
+}
+
+:root[data-theme="light"] {
+    color-scheme: light;
+    --color-obsidian: #f5f8f4;
+    --color-forest: #ffffff;
+    --color-emerald: #d3e1d8;
+    --color-sage: #246546;
+    --color-ivory: #14251d;
+    --color-muted: #4b6155;
+}
+
+body {
+    @apply bg-obsidian font-sans text-ivory antialiased;
+    overflow-x: hidden;
+}
+
+::selection {
+    background: var(--color-sage);
+    color: var(--color-obsidian);
+}
+
+:focus-visible {
+    outline: 2px solid var(--color-sage);
+    outline-offset: 3px;
+}
+
+.display {
+    font-family: "Space Grotesk", "Inter", "Space Grotesk Fallback", sans-serif;
+    letter-spacing: -0.04em;
+    line-height: 0.9;
+}
+
+.h-xl {
+    font-size: clamp(2.875rem, 10vw, 9.75rem);
+}
+
+.h-lg {
+    font-size: clamp(2.375rem, 6.5vw, 6rem);
+}
+
+.hero-photo {
+    top: 3rem;
+    right: -8%;
+    width: min(94%, 29rem);
+    height: min(62%, 32rem);
+    object-position: 50% 62%;
+    opacity: 0.46;
+    mask-image: radial-gradient(ellipse 47% 49% at 53% 50%, #000 18%, rgb(0 0 0 / 0.82) 43%, transparent 100%);
+}
+
+@media (min-width: 48rem) {
+    .hero-photo {
+        right: 0;
+        width: min(56%, 58rem);
+        height: min(79%, 54rem);
+        opacity: 0.52;
+    }
+}
+
+:root[data-theme="light"] .hero-photo {
+    opacity: 0.32;
+}
+
+.grid-lines {
+    background-image: linear-gradient(to right, color-mix(in srgb, var(--color-sage) 6%, transparent) 1px, transparent 1px);
+    background-size: 12.5% 100%;
+}
+
+.project-slide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.project-slide[data-active] {
+    z-index: 1;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.project-gallery-fallback:not([data-gallery-ready]) {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.project-gallery-fallback:not([data-gallery-ready]) .project-slide {
+    position: relative;
+    flex: 0 0 100%;
+    opacity: 1;
+    pointer-events: auto;
+    scroll-snap-align: start;
+}
+
+.language-switcher {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65rem;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    font-family: var(--font-mono);
+    color: var(--color-muted);
+}
+
+.language-switcher a:hover,
+.language-switcher a[aria-current="true"] {
+    color: var(--color-sage);
+}
+
+@media (max-width: 90rem) {
+    .portfolio-nav {
+        gap: clamp(0.75rem, 2.1vw, 2rem);
+    }
+}
+
+@media (max-width: 30rem) {
+    html:not([lang="en"]) .h-xl {
+        font-size: clamp(2.125rem, 9.5vw, 2.875rem);
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .motion-enabled [data-reveal]:not(.revealed) {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+
+    .motion-enabled [data-hero-line] {
+        animation: hero-line 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+        animation-delay: var(--delay, 0.1s);
+    }
+
+    @keyframes hero-line {
+        from { transform: translateY(110%); }
+        to { transform: translateY(0); }
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    * { animation: none !important; transition: none !important; }
+}
+

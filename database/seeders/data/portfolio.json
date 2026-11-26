@@ -1,0 +1,843 @@
+{
+  "profile": {
+    "details": {
+      "name": "Yusuf Developer",
+      "short": "YUSUF.",
+      "email": null,
+      "github": "https://github.com/Tabascoussef",
+      "linkedin": null,
+      "resume": null,
+      "time_zone": "Asia/Tashkent"
+    },
+    "translations": {
+      "uz": {
+        "hero_first": "KELAJAKNI",
+        "hero_second": "QURAMAN.",
+        "hero_intro": "Men Yusufman. Dasturiy ta’minot muhandisi sifatida puxta o‘ylangan raqamli mahsulotlar yarataman va intellektual tizimlarni o‘rganaman.",
+        "location": "O‘zbekiston",
+        "status": "Takliflarga ochiqman",
+        "about_title": "Avvalo muhandisman. O‘rganishda davom etyapman.",
+        "about_first": "Qo‘qon universitetining Andijon filialida kompyuter injiniringi yo‘nalishida o‘qiyman. Veb-platformalar, boshqaruv panellari, ta’lim tizimlari va avtomatlashtirish vositalarini yaratganman.",
+        "about_second": "Asosiy tajribam Laravel va PHP, Vue, PostgreSQL, API ishlab chiqish va amaliy foydalanishga tayyor arxitekturani qamrab oladi. Hozir Python, sun’iy intellekt, axborot qidirish tizimlari va intellektual agentlarni o‘rganyapman.",
+        "award_event": "TECH4REGION AI Hakatoni, 2025",
+        "award_title": "Birinchi o‘rin.",
+        "award_text": "Besh kishilik jamoa tarkibida g‘olib bo‘ldik.",
+        "contact_first": "BIROR G‘OYA",
+        "contact_second": "BORMI?",
+        "seo_description": "Laravel yordamida raqamli mahsulotlar yaratuvchi va intellektual tizimlarni o‘rganuvchi dasturiy ta’minot muhandisi."
+      },
+      "en": {
+        "hero_first": "BUILDING",
+        "hero_second": "WHAT'S NEXT.",
+        "hero_intro": "I'm Yusuf — a software engineer building thoughtful digital products and exploring intelligent systems.",
+        "location": "Uzbekistan",
+        "status": "Open to opportunities",
+        "about_title": "Engineer first. Still growing.",
+        "about_first": "I'm a Computer Engineering student at Kokand University, Andijan Branch. I've built web platforms, dashboards, academic systems and automation tools.",
+        "about_second": "My foundation is Laravel and PHP, Vue, PostgreSQL, API development and production-minded architecture. I'm now expanding into Python, AI, retrieval systems and intelligent agents.",
+        "award_event": "TECH4REGION AI Hackathon, 2025",
+        "award_title": "First place.",
+        "award_text": "Won as part of a five-member team.",
+        "contact_first": "HAVE SOMETHING",
+        "contact_second": "IN MIND?",
+        "seo_description": "Software engineer building thoughtful digital products with Laravel and exploring intelligent systems."
+      },
+      "ru": {
+        "hero_first": "СТРОЮ",
+        "hero_second": "БУДУЩЕЕ.",
+        "hero_intro": "Я Юсуф, инженер-программист. Создаю продуманные цифровые продукты и изучаю интеллектуальные системы.",
+        "location": "Узбекистан",
+        "status": "Открыт к предложениям",
+        "about_title": "Прежде всего инженер. Продолжаю расти.",
+        "about_first": "Я учусь по направлению компьютерной инженерии в Андижанском филиале Кокандского университета. Разрабатывал веб-платформы, панели управления, образовательные системы и инструменты автоматизации.",
+        "about_second": "Моя база — Laravel и PHP, Vue, PostgreSQL, разработка API и проектирование архитектуры для реальной эксплуатации. Сейчас изучаю Python, искусственный интеллект, поисковые системы и интеллектуальных агентов.",
+        "award_event": "Хакатон TECH4REGION AI, 2025",
+        "award_title": "Первое место.",
+        "award_text": "Одержали победу в команде из пяти человек.",
+        "contact_first": "ЕСТЬ",
+        "contact_second": "ИДЕЯ?",
+        "seo_description": "Инженер-программист. Создаю продуманные цифровые продукты на Laravel и изучаю интеллектуальные системы."
+      }
+    }
+  },
+  "entries": [
+    {
+      "section": "projects",
+      "slug": "kuaf-university-platform",
+      "position": 10,
+      "details": {
+        "year": null,
+        "stack": [
+          "PHP",
+          "Laravel",
+          "PostgreSQL"
+        ],
+        "images": [],
+        "github": null,
+        "live": null
+      },
+      "translations": {
+        "uz": {
+          "name": "KUAF universitet platformasi",
+          "category": "Veb-platforma",
+          "role": "Dasturchi (vazifa tafsilotlari aniqlanmoqda)",
+          "problem": "Universitet ommaviy kontent va ma’muriy vositalarni bir joyda boshqarishi kerak.",
+          "solution": "Laravel asosida kontent va ma’muriy modullar yaratildi.",
+          "architecture": [
+            "Ma’muriyat va kontent alohida modullarga bo‘lingan",
+            "Tasdiqlangan tafsilotlar keyinroq qo‘shiladi"
+          ],
+          "challenges": [
+            "Aniq qiyinchiliklar keyinroq qo‘shiladi."
+          ],
+          "outcomes": []
+        },
+        "en": {
+          "name": "KUAF University Platform",
+          "category": "Web platform",
+          "role": "Developer (role details TBC)",
+          "problem": "A university needs structured public content and administrative tools in one place.",
+          "solution": "Content and administrative modules built on a Laravel backend.",
+          "architecture": [
+            "Modular admin and content domains",
+            "TODO: add verified details"
+          ],
+          "challenges": [
+            "TODO: describe a real challenge."
+          ],
+          "outcomes": []
+        },
+        "ru": {
+          "name": "Платформа университета KUAF",
+          "category": "Веб-платформа",
+          "role": "Разработчик (обязанности уточняются)",
+          "problem": "Университету нужна единая площадка для публикации материалов и административной работы.",
+          "solution": "Модули управления контентом и административными задачами разработаны на Laravel.",
+          "architecture": [
+            "Раздельные модули администрирования и контента",
+            "Подтверждённые детали будут добавлены"
+          ],
+          "challenges": [
+            "Описание конкретных сложностей будет добавлено."
+          ],
+          "outcomes": []
+        }
+      }
+    },
+    {
+      "section": "projects",
+      "slug": "grantform",
+      "position": 20,
+      "details": {
+        "year": null,
+        "stack": [
+          "Laravel",
+          "Vue",
+          "Inertia.js"
+        ],
+        "images": [],
+        "github": null,
+        "live": null
+      },
+      "translations": {
+        "uz": {
+          "name": "GrantForm",
+          "category": "Jarayonlarni boshqarish ilovasi",
+          "role": "Dasturchi (vazifa tafsilotlari aniqlanmoqda)",
+          "problem": "Ko‘p bo‘limli stipendiya arizalarini yagona mezonlar asosida baholash kerak.",
+          "solution": "Ko‘p bosqichli ariza shakli va ball berish jarayoni.",
+          "architecture": [
+            "Shakl holati har bir bosqichda saqlanadi",
+            "Baholash ariza topshirishdan ajratilgan"
+          ],
+          "challenges": [
+            "Aniq qiyinchiliklar keyinroq qo‘shiladi."
+          ],
+          "outcomes": []
+        },
+        "en": {
+          "name": "GrantForm",
+          "category": "Workflow application",
+          "role": "Developer (role details TBC)",
+          "problem": "Scholarship applications are long, multi-part and need consistent evaluation.",
+          "solution": "A multi-step application flow with a scoring workflow.",
+          "architecture": [
+            "Step-by-step form state",
+            "Scoring workflow separated from submission"
+          ],
+          "challenges": [
+            "TODO: describe a real challenge."
+          ],
+          "outcomes": []
+        },
+        "ru": {
+          "name": "GrantForm",
+          "category": "Приложение для обработки заявок",
+          "role": "Разработчик (обязанности уточняются)",
+          "problem": "Длинные заявки на стипендии состоят из нескольких разделов и требуют единых критериев оценки.",
+          "solution": "Многоэтапная подача заявок с системой баллов.",
+          "architecture": [
+            "Отдельное состояние формы для каждого этапа",
+            "Оценивание отделено от подачи заявки"
+          ],
+          "challenges": [
+            "Описание конкретных сложностей будет добавлено."
+          ],
+          "outcomes": []
+        }
+      }
+    },
+    {
+      "section": "projects",
+      "slug": "gentree",
+      "position": 30,
+      "details": {
+        "year": null,
+        "stack": [
+          "Laravel",
+          "Vue",
+          "PostgreSQL"
+        ],
+        "images": [],
+        "github": null,
+        "live": null
+      },
+      "translations": {
+        "uz": {
+          "name": "Gentree",
+          "category": "Interaktiv ilova",
+          "role": "Dasturchi (vazifa tafsilotlari aniqlanmoqda)",
+          "problem": "Oilalar qarindoshlik aloqalarini ko‘rishi va tegishli hujjatlarni saqlashi kerak.",
+          "solution": "Hujjatlarni boshqarish imkoniyatiga ega interaktiv shajara.",
+          "architecture": [
+            "Daraxt shaklidagi ma’lumotlar modeli",
+            "Har bir shaxs uchun hujjatlar saqlanadi"
+          ],
+          "challenges": [
+            "Aniq qiyinchiliklar keyinroq qo‘shiladi."
+          ],
+          "outcomes": []
+        },
+        "en": {
+          "name": "Gentree",
+          "category": "Interactive application",
+          "role": "Developer (role details TBC)",
+          "problem": "Families need to see relationships and keep supporting documents attached.",
+          "solution": "An interactive family tree with document management.",
+          "architecture": [
+            "Tree data model",
+            "Document storage per person"
+          ],
+          "challenges": [
+            "TODO: describe a real challenge."
+          ],
+          "outcomes": []
+        },
+        "ru": {
+          "name": "Gentree",
+          "category": "Интерактивное приложение",
+          "role": "Разработчик (обязанности уточняются)",
+          "problem": "Семьям нужно видеть родственные связи и хранить документы, относящиеся к членам семьи.",
+          "solution": "Интерактивное семейное дерево с управлением документами.",
+          "architecture": [
+            "Древовидная модель данных",
+            "Хранение документов по каждому человеку"
+          ],
+          "challenges": [
+            "Описание конкретных сложностей будет добавлено."
+          ],
+          "outcomes": []
+        }
+      }
+    },
+    {
+      "section": "projects",
+      "slug": "huquqai",
+      "position": 40,
+      "details": {
+        "year": null,
+        "stack": [
+          "Python",
+          "Local LLMs",
+          "Embeddings",
+          "RAG"
+        ],
+        "images": [],
+        "github": null,
+        "live": null
+      },
+      "translations": {
+        "uz": {
+          "name": "HuquqAI",
+          "category": "Sun’iy intellekt tajribasi",
+          "role": "Dasturchi (vazifa tafsilotlari aniqlanmoqda)",
+          "problem": "Katta hajmdagi huquqiy matnlardan savollarga javob topish qiyin.",
+          "solution": "Savollarga javob berish va hujjatlardan ma’lumot izlash uchun tajriba tizimi.",
+          "architecture": [
+            "Hujjatlar to‘plamidan kerakli parchalarni qidirish",
+            "Topilgan parchalarga tayangan holda javob yaratish"
+          ],
+          "challenges": [
+            "Aniq qiyinchiliklar keyinroq qo‘shiladi."
+          ],
+          "outcomes": []
+        },
+        "en": {
+          "name": "HuquqAI",
+          "category": "AI experiment",
+          "role": "Developer (role details TBC)",
+          "problem": "Legal questions are hard to answer from large bodies of text.",
+          "solution": "An experimental question-answering and retrieval system. Experimental, not a production claim.",
+          "architecture": [
+            "Retrieval over a document corpus",
+            "Generation grounded in retrieved passages"
+          ],
+          "challenges": [
+            "TODO: describe a real challenge."
+          ],
+          "outcomes": []
+        },
+        "ru": {
+          "name": "HuquqAI",
+          "category": "Эксперимент с ИИ",
+          "role": "Разработчик (обязанности уточняются)",
+          "problem": "В больших массивах юридических текстов сложно находить ответы на конкретные вопросы.",
+          "solution": "Экспериментальная система поиска и ответов на вопросы.",
+          "architecture": [
+            "Поиск по корпусу документов",
+            "Генерация ответов с опорой на найденные фрагменты"
+          ],
+          "challenges": [
+            "Описание конкретных сложностей будет добавлено."
+          ],
+          "outcomes": []
+        }
+      }
+    },
+    {
+      "section": "projects",
+      "slug": "president-uz-scraper",
+      "position": 50,
+      "details": {
+        "year": null,
+        "stack": [
+          "Python",
+          "asyncio"
+        ],
+        "images": [],
+        "github": null,
+        "live": null
+      },
+      "translations": {
+        "uz": {
+          "name": "President.uz Scraper",
+          "category": "Avtomatlashtirish",
+          "role": "Dasturchi (vazifa tafsilotlari aniqlanmoqda)",
+          "problem": "E’lon qilingan materiallarni qo‘lda yig‘ish ko‘p vaqt oladi va natijalar bir xil shaklda bo‘lmaydi.",
+          "solution": "Kontentni avtomatik yig‘adigan asinxron vosita.",
+          "architecture": [
+            "Asinxron so‘rovlar oqimi",
+            "Natijalarni tuzilmali shaklda saqlash"
+          ],
+          "challenges": [
+            "Aniq qiyinchiliklar keyinroq qo‘shiladi."
+          ],
+          "outcomes": []
+        },
+        "en": {
+          "name": "President.uz Scraper",
+          "category": "Automation",
+          "role": "Developer (role details TBC)",
+          "problem": "Collecting published content by hand is slow and inconsistent.",
+          "solution": "An asynchronous collector that gathers content automatically.",
+          "architecture": [
+            "Async request pipeline",
+            "Structured output storage"
+          ],
+          "challenges": [
+            "TODO: describe a real challenge."
+          ],
+          "outcomes": []
+        },
+        "ru": {
+          "name": "Сборщик President.uz",
+          "category": "Автоматизация",
+          "role": "Разработчик (обязанности уточняются)",
+          "problem": "Ручной сбор опубликованных материалов занимает много времени и даёт неоднородные результаты.",
+          "solution": "Асинхронный инструмент для автоматического сбора материалов.",
+          "architecture": [
+            "Асинхронная обработка запросов",
+            "Хранение результатов в структурированном виде"
+          ],
+          "challenges": [
+            "Описание конкретных сложностей будет добавлено."
+          ],
+          "outcomes": []
+        }
+      }
+    },
+    {
+      "section": "projects",
+      "slug": "medical-journal-theme",
+      "position": 60,
+      "details": {
+        "year": null,
+        "stack": [
+          "OJS",
+          "PHP",
+          "CSS"
+        ],
+        "images": [],
+        "github": null,
+        "live": null
+      },
+      "translations": {
+        "uz": {
+          "name": "Tibbiy ilmiy jurnal mavzusi",
+          "category": "OJS interfeysi",
+          "role": "Dasturchi (vazifa tafsilotlari aniqlanmoqda)",
+          "problem": "Jurnal saytlari ko‘pincha sekin ishlaydi va matnlarini o‘qish qiyin.",
+          "solution": "Open Journal Systems uchun tez ishlaydigan interfeys mavzusi.",
+          "architecture": [
+            "Yengil shablonlar",
+            "Sahifa resurslarini tez yuklash"
+          ],
+          "challenges": [
+            "Aniq qiyinchiliklar keyinroq qo‘shiladi."
+          ],
+          "outcomes": []
+        },
+        "en": {
+          "name": "Academic Medical Journal Theme",
+          "category": "OJS interface",
+          "role": "Developer (role details TBC)",
+          "problem": "Journal sites are often slow and hard to read.",
+          "solution": "A high-performance interface theme for Open Journal Systems.",
+          "architecture": [
+            "Lean templates",
+            "Performance-first asset loading"
+          ],
+          "challenges": [
+            "TODO: describe a real challenge."
+          ],
+          "outcomes": []
+        },
+        "ru": {
+          "name": "Тема научного медицинского журнала",
+          "category": "Интерфейс OJS",
+          "role": "Разработчик (обязанности уточняются)",
+          "problem": "Сайты журналов часто загружаются медленно, и их тексты неудобно читать.",
+          "solution": "Быстрая тема оформления для Open Journal Systems.",
+          "architecture": [
+            "Облегчённые шаблоны",
+            "Оптимизированная загрузка ресурсов"
+          ],
+          "challenges": [
+            "Описание конкретных сложностей будет добавлено."
+          ],
+          "outcomes": []
+        }
+      }
+    },
+    {
+      "section": "projects",
+      "slug": "quiz-platform",
+      "position": 70,
+      "details": {
+        "year": null,
+        "stack": [
+          "Laravel",
+          "PostgreSQL",
+          "Queues"
+        ],
+        "images": [],
+        "github": null,
+        "live": null
+      },
+      "translations": {
+        "uz": {
+          "name": "Onlayn test platformasi",
+          "category": "Veb-ilova",
+          "role": "Dasturchi (vazifa tafsilotlari aniqlanmoqda)",
+          "problem": "Testlarni o‘tkazish va natijalarni bitta tizimda kuzatish kerak.",
+          "solution": "Testlar o‘tkazish va natijalarni kuzatish uchun onlayn platforma.",
+          "architecture": [
+            "Urinishlar va natijalar modellari",
+            "Natijalarni navbat orqali qayta ishlash"
+          ],
+          "challenges": [
+            "Aniq qiyinchiliklar keyinroq qo‘shiladi."
+          ],
+          "outcomes": []
+        },
+        "en": {
+          "name": "Test/Quiz Platform",
+          "category": "Web application",
+          "role": "Developer (role details TBC)",
+          "problem": "Assessments need delivery and result tracking in one system.",
+          "solution": "An online platform for tests with result tracking.",
+          "architecture": [
+            "Attempt and result models",
+            "Queued result processing"
+          ],
+          "challenges": [
+            "TODO: describe a real challenge."
+          ],
+          "outcomes": []
+        },
+        "ru": {
+          "name": "Платформа для тестирования",
+          "category": "Веб-приложение",
+          "role": "Разработчик (обязанности уточняются)",
+          "problem": "Для проведения тестов и учёта результатов нужна единая система.",
+          "solution": "Онлайн-платформа для тестирования с отслеживанием результатов.",
+          "architecture": [
+            "Модели попыток и результатов",
+            "Обработка результатов через очередь"
+          ],
+          "challenges": [
+            "Описание конкретных сложностей будет добавлено."
+          ],
+          "outcomes": []
+        }
+      }
+    },
+    {
+      "section": "skills",
+      "position": 10,
+      "details": {},
+      "translations": {
+        "uz": {
+          "name": "Server tomoni",
+          "established": [
+            "PHP",
+            "Laravel",
+            "REST API",
+            "Autentifikatsiya",
+            "Navbatlar",
+            "PostgreSQL",
+            "MySQL"
+          ],
+          "learning": []
+        },
+        "en": {
+          "name": "Backend",
+          "established": [
+            "PHP",
+            "Laravel",
+            "REST APIs",
+            "Authentication",
+            "Queues",
+            "PostgreSQL",
+            "MySQL"
+          ],
+          "learning": []
+        },
+        "ru": {
+          "name": "Бэкенд",
+          "established": [
+            "PHP",
+            "Laravel",
+            "REST API",
+            "Аутентификация",
+            "Очереди",
+            "PostgreSQL",
+            "MySQL"
+          ],
+          "learning": []
+        }
+      }
+    },
+    {
+      "section": "skills",
+      "position": 20,
+      "details": {},
+      "translations": {
+        "uz": {
+          "name": "Frontend",
+          "established": [
+            "JavaScript",
+            "Vue",
+            "Inertia.js",
+            "Tailwind CSS",
+            "HTML/CSS"
+          ],
+          "learning": []
+        },
+        "en": {
+          "name": "Frontend",
+          "established": [
+            "JavaScript",
+            "Vue",
+            "Inertia.js",
+            "Tailwind CSS",
+            "HTML/CSS"
+          ],
+          "learning": []
+        },
+        "ru": {
+          "name": "Фронтенд",
+          "established": [
+            "JavaScript",
+            "Vue",
+            "Inertia.js",
+            "Tailwind CSS",
+            "HTML/CSS"
+          ],
+          "learning": []
+        }
+      }
+    },
+    {
+      "section": "skills",
+      "position": 30,
+      "details": {},
+      "translations": {
+        "uz": {
+          "name": "Vositalar",
+          "established": [
+            "Git",
+            "GitHub",
+            "Docker",
+            "Linux"
+          ],
+          "learning": []
+        },
+        "en": {
+          "name": "Tools",
+          "established": [
+            "Git",
+            "GitHub",
+            "Docker",
+            "Linux"
+          ],
+          "learning": []
+        },
+        "ru": {
+          "name": "Инструменты",
+          "established": [
+            "Git",
+            "GitHub",
+            "Docker",
+            "Linux"
+          ],
+          "learning": []
+        }
+      }
+    },
+    {
+      "section": "skills",
+      "position": 40,
+      "details": {},
+      "translations": {
+        "uz": {
+          "name": "Sun’iy intellekt",
+          "established": [],
+          "learning": [
+            "Python",
+            "Mahalliy til modellari",
+            "RAG asoslari",
+            "Vektorli ifodalash",
+            "AI agentlari"
+          ]
+        },
+        "en": {
+          "name": "AI exploration",
+          "established": [],
+          "learning": [
+            "Python",
+            "Local LLMs",
+            "RAG concepts",
+            "Embeddings",
+            "AI agents"
+          ]
+        },
+        "ru": {
+          "name": "Изучение ИИ",
+          "established": [],
+          "learning": [
+            "Python",
+            "Локальные языковые модели",
+            "Основы RAG",
+            "Эмбеддинги",
+            "ИИ-агенты"
+          ]
+        }
+      }
+    },
+    {
+      "section": "journey",
+      "position": 10,
+      "details": {},
+      "translations": {
+        "uz": {
+          "when": "Sana aniqlanmoqda",
+          "name": "Kompyuter injiniringi",
+          "text": "Qo‘qon universitetining Andijon filialida o‘qiyman."
+        },
+        "en": {
+          "name": "Computer Engineering",
+          "when": "TBC",
+          "text": "Studying at Kokand University, Andijan Branch."
+        },
+        "ru": {
+          "when": "Дата уточняется",
+          "name": "Компьютерная инженерия",
+          "text": "Учусь в Андижанском филиале Кокандского университета."
+        }
+      }
+    },
+    {
+      "section": "journey",
+      "position": 20,
+      "details": {},
+      "translations": {
+        "uz": {
+          "when": "Sana aniqlanmoqda",
+          "name": "Laravel va full-stack dasturlash",
+          "text": "Veb-platformalar, boshqaruv panellari, ta’lim tizimlari va avtomatlashtirish vositalari."
+        },
+        "en": {
+          "name": "Laravel & full-stack work",
+          "when": "TBC",
+          "text": "Web platforms, dashboards, academic systems and automation tools."
+        },
+        "ru": {
+          "when": "Дата уточняется",
+          "name": "Laravel и фулстек-разработка",
+          "text": "Веб-платформы, панели управления, образовательные системы и инструменты автоматизации."
+        }
+      }
+    },
+    {
+      "section": "journey",
+      "position": 30,
+      "details": {},
+      "translations": {
+        "uz": {
+          "when": "2025",
+          "name": "TECH4REGION AI Hakatoni",
+          "text": "Besh kishilik jamoa tarkibida birinchi o‘rinni egalladik."
+        },
+        "en": {
+          "name": "TECH4REGION AI Hackathon",
+          "when": "2025",
+          "text": "First place as part of a five-member team."
+        },
+        "ru": {
+          "when": "2025",
+          "name": "Хакатон TECH4REGION AI",
+          "text": "Первое место в команде из пяти человек."
+        }
+      }
+    },
+    {
+      "section": "journey",
+      "position": 40,
+      "details": {},
+      "translations": {
+        "uz": {
+          "when": "Hozir",
+          "name": "Sun’iy intellekt bo‘yicha tajribalar",
+          "text": "Python, axborot qidirish tizimlari va intellektual agentlar."
+        },
+        "en": {
+          "name": "AI experimentation",
+          "when": "Now",
+          "text": "Python, retrieval systems and intelligent agents."
+        },
+        "ru": {
+          "when": "Сейчас",
+          "name": "Эксперименты с ИИ",
+          "text": "Python, поисковые системы и интеллектуальные агенты."
+        }
+      }
+    },
+    {
+      "section": "journey",
+      "position": 50,
+      "details": {},
+      "translations": {
+        "uz": {
+          "when": "Keyingi bosqich",
+          "name": "Sun’iy intellekt muhandisligi",
+          "text": "Mustahkam muhandislik asosida intellektual tizimlar yaratish."
+        },
+        "en": {
+          "name": "AI Engineering",
+          "when": "Next",
+          "text": "Building intelligent systems on a solid engineering base."
+        },
+        "ru": {
+          "when": "Далее",
+          "name": "Инженерия ИИ",
+          "text": "Разработка интеллектуальных систем на прочной инженерной основе."
+        }
+      }
+    },
+    {
+      "section": "principles",
+      "position": 10,
+      "details": {},
+      "translations": {
+        "uz": {
+          "name": "Aniq maqsad bilan yarat."
+        },
+        "en": {
+          "name": "Build with purpose."
+        },
+        "ru": {
+          "name": "Разрабатывай с ясной целью."
+        }
+      }
+    },
+    {
+      "section": "principles",
+      "position": 20,
+      "details": {},
+      "translations": {
+        "uz": {
+          "name": "Tezlik ham mahsulot xususiyati."
+        },
+        "en": {
+          "name": "Performance is a feature."
+        },
+        "ru": {
+          "name": "Быстродействие — часть продукта."
+        }
+      }
+    },
+    {
+      "section": "principles",
+      "position": 30,
+      "details": {},
+      "translations": {
+        "uz": {
+          "name": "Sifatni tafsilotlar belgilaydi."
+        },
+        "en": {
+          "name": "Details define quality."
+        },
+        "ru": {
+          "name": "Детали определяют качество."
+        }
+      }
+    },
+    {
+      "section": "principles",
+      "position": 40,
+      "details": {},
+      "translations": {
+        "uz": {
+          "name": "Qiziqishni yo‘qotma. Ishingni yakunlab, foydalanuvchiga yetkaz."
+        },
+        "en": {
+          "name": "Stay curious. Keep shipping."
+        },
+        "ru": {
+          "name": "Сохраняй любопытство. Доводи работу до выпуска."
+        }
+      }
+    }
+  ]
+}
