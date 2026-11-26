@@ -1,0 +1,18 @@
+load("//anybuild/tools:laravel.bzl", "laravel_build", "laravel_config", "laravel_serve")
+
+config = laravel_config(
+    php_framework = "laravel",
+    php_version = "8.3.29",
+    php_public_dir = "public",
+    composer_enable = True,
+    composer_build_script = "deploy:install",
+    node_package_manager = "npm",
+    node_build_command = "npm run build",
+    node_version = "24",
+)
+
+laravel_serve(
+    config,
+    laravel_build(config),
+    extra_commands = {"after_deploy": "php artisan migrate --force"},
+)
