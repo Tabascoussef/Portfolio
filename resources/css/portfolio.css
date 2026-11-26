@@ -1,5 +1,5 @@
-@import "tailwindcss" source(none);
-@import "./portfolio-fonts.css";
+@import 'tailwindcss' source(none);
+@import './portfolio-fonts.css';
 
 @source "../views/portfolio";
 
@@ -10,8 +10,8 @@
     --color-sage: #a3d9b1;
     --color-ivory: #f2f5f0;
     --color-muted: #91a29b;
-    --font-sans: "Inter", "Inter Fallback", sans-serif;
-    --font-mono: "JetBrains Mono", "JetBrains Mono Fallback", monospace;
+    --font-sans: 'Inter', 'Inter Fallback', sans-serif;
+    --font-mono: 'JetBrains Mono', 'JetBrains Mono Fallback', monospace;
 }
 
 @utility portfolio-container {
@@ -19,7 +19,7 @@
 }
 
 @utility gallery-button {
-    @apply grid size-8 cursor-pointer place-items-center rounded-md bg-obsidian/85 text-sm text-ivory hover:bg-emerald;
+    @apply bg-obsidian/85 text-ivory hover:bg-emerald grid size-8 cursor-pointer place-items-center rounded-md text-sm;
 }
 
 html {
@@ -28,7 +28,7 @@ html {
     scroll-behavior: smooth;
 }
 
-:root[data-theme="light"] {
+:root[data-theme='light'] {
     color-scheme: light;
     --color-obsidian: #f5f8f4;
     --color-forest: #ffffff;
@@ -39,7 +39,7 @@ html {
 }
 
 body {
-    @apply bg-obsidian font-sans text-ivory antialiased;
+    @apply bg-obsidian text-ivory font-sans antialiased;
     overflow-x: hidden;
 }
 
@@ -54,7 +54,7 @@ body {
 }
 
 .display {
-    font-family: "Space Grotesk", "Inter", "Space Grotesk Fallback", sans-serif;
+    font-family: 'Space Grotesk', 'Inter', 'Space Grotesk Fallback', sans-serif;
     letter-spacing: -0.04em;
     line-height: 0.9;
 }
@@ -74,7 +74,12 @@ body {
     height: min(62%, 32rem);
     object-position: 50% 62%;
     opacity: 0.46;
-    mask-image: radial-gradient(ellipse 47% 49% at 53% 50%, #000 18%, rgb(0 0 0 / 0.82) 43%, transparent 100%);
+    mask-image: radial-gradient(
+        ellipse 47% 49% at 53% 50%,
+        #000 18%,
+        rgb(0 0 0 / 0.82) 43%,
+        transparent 100%
+    );
 }
 
 @media (min-width: 48rem) {
@@ -86,12 +91,16 @@ body {
     }
 }
 
-:root[data-theme="light"] .hero-photo {
+:root[data-theme='light'] .hero-photo {
     opacity: 0.32;
 }
 
 .grid-lines {
-    background-image: linear-gradient(to right, color-mix(in srgb, var(--color-sage) 6%, transparent) 1px, transparent 1px);
+    background-image: linear-gradient(
+        to right,
+        color-mix(in srgb, var(--color-sage) 6%, transparent) 1px,
+        transparent 1px
+    );
     background-size: 12.5% 100%;
 }
 
@@ -131,7 +140,7 @@ body {
 }
 
 .language-switcher a:hover,
-.language-switcher a[aria-current="true"] {
+.language-switcher a[aria-current='true'] {
     color: var(--color-sage);
 }
 
@@ -142,7 +151,7 @@ body {
 }
 
 @media (max-width: 30rem) {
-    html:not([lang="en"]) .h-xl {
+    html:not([lang='en']) .h-xl {
         font-size: clamp(2.125rem, 9.5vw, 2.875rem);
     }
 }
@@ -159,13 +168,21 @@ body {
     }
 
     @keyframes hero-line {
-        from { transform: translateY(110%); }
-        to { transform: translateY(0); }
+        from {
+            transform: translateY(110%);
+        }
+        to {
+            transform: translateY(0);
+        }
     }
 }
 
 @media (prefers-reduced-motion: reduce) {
-    html { scroll-behavior: auto; }
-    * { animation: none !important; transition: none !important; }
+    html {
+        scroll-behavior: auto;
+    }
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
 }
-

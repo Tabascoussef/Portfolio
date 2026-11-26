@@ -24,7 +24,7 @@ class ProfileController
         $profile = PortfolioProfile::firstOrCreate(['id' => PortfolioProfile::SINGLETON_ID]);
 
         DB::transaction(function () use ($profile, $attributes): void {
-            $lockedProfile = PortfolioProfile::query()->lockForUpdate()->findOrFail($profile->getKey());
+            $lockedProfile = PortfolioProfile::query()->lockForUpdate()->findOrFail($profile->id);
             $attributes['details'] = array_replace($lockedProfile->details, $attributes['details']);
             $lockedProfile->update($attributes);
         }, 3);

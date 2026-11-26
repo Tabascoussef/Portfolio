@@ -70,7 +70,7 @@ class EntryController
         $reference = $request->validate(['image' => ['required', 'string', 'max:2048']], attributes: ['image' => __('admin.remove_image')])['image'];
 
         $removed = DB::transaction(function () use ($entry, $reference): array {
-            $project = PortfolioEntry::query()->lockForUpdate()->findOrFail($entry->getKey());
+            $project = PortfolioEntry::query()->lockForUpdate()->findOrFail($entry->id);
 
             return $this->saveGallery($project, [], [], [$reference]);
         }, 3);
@@ -86,7 +86,7 @@ class EntryController
         abort_unless($section === $entry->section, 404);
 
         $paths = DB::transaction(function () use ($entry): array {
-            $entry = PortfolioEntry::query()->lockForUpdate()->findOrFail($entry->getKey());
+            $entry = PortfolioEntry::query()->lockForUpdate()->findOrFail($entry->id);
             $entry->delete();
 
             return $entry->imagePaths();
@@ -113,7 +113,7 @@ class EntryController
         $requestedRemovals = $request->validated('remove_images', []);
 
         $disk = Storage::disk('public');
-        $entryId = $entry->getKey();
+        $entryId = $entry->exists ? $entry->id : null;
         $uploads = [];
         try {
             foreach ($images as $image) {
